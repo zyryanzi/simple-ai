@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>人脸识别</title>
+  </head>
+  <body>
+    <h1>人脸识别</h1>
+    <input id="face_id" type="text"><br>
+    <span onclick="face_dataset()" style="cursor:pointer">人脸信息采集</span><br>
+    <a href="/recognition">人脸信息识别</a><br>
+    <span></span>
+  </body>
+  <script>
+    function face_dataset(){
+        var face_id = document.getElementById("face_id").value;
+        if(!face_id){
+            confirm("请输入姓名");
+            return;
+        }
+        location.href = "/dataset?face_id=" + face_id;
+    }
+  </script>
+</html>

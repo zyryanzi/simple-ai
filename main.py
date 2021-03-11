@@ -42,4 +42,4 @@ def recognition():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=50501, debug=True)
+    app.run(host='23.105.198.209', port=50501, debug=False)
